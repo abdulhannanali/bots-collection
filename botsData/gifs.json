@@ -1,0 +1,14 @@
+{
+	"name": "Gifs.com Bot",
+	"url": "https://telegram.me/gifscombot",
+	"images": [
+		"assets/img/profile.png",
+		"assets/img/pic1",
+		"assets/img/pic2"
+	],
+	"store_link": "https://storebot.bot/bot/gifscombot",
+	"bot_link": "https://telegram.me/gifscombot",
+	"short_desc": "Upload Videos or give it an Instagram, Facebook, Twitter etc. link and it will convert that to gif for you",
+	"github_url": "https://github.com/abdulhannanali/gifscombot",
+	"long_desc": "desc1.md"
+}

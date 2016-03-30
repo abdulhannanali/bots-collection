@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Telegram Bots Collection!</title>
+	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+	<link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	<nav class="blue">
+		<div class="container">
+			<div class="nav-wrapper">	
+				<a class="brand-logo" href="#">Telegram Bots</a>
+			</div>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="https://github.com/abdulhannanali">Made with <span class="red-text">♥</span> by Hannan Ali</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Telegram Bots description section -->
+	<div class="section">
+		<div class="row container">
+			<div class="col s12 m4 center">
+				<img src="assets/img/botfather.png" class="responsive-img materialboxed" height="240px" width="320px" data-caption="Image © of Telegram" />
+				<small>Image © of <a href="https://telegram.me">Telegram</a></small>
+			</div>
+			<div class="col s12 m8">
+				<h3 class="header blue-text">TelegramBots Collection</h3>
+				<p>Telegram bots are a really revolutionary way to communicate with users in a secure way. <a href="https://core.telegram.org/bots/api"> Telegram Bots API</a> is really easy to use and efficient to establish a multi media enabled experience with your user. The telegram bot market is really exploding and there's a bot for every usage now on it's <a href="http://storebot.me/">Telegram Store Bot</a>. I develop bots for Telegram using <a href="https://github.com/yagop">yagop's</a> <a href="https://github.com/yagop/node-telegram-bot-api">node-telegram-bot-api</a> library which is fully compatible with Telegram official Bot's API</p>
+				<p>All the bots listed below are open sourced on <b><a href="https://github.com">Github</a></b> and any contribution is very welcomed</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<h5 class="header center">Bots with my contribution of <span class="grey-text">🛠</span><span class="brown-text">🛠</span><span class="grey-text">🛠</span><span class="brown-text">🛠</span><span class="grey-text">🛠</span><span class="brown-text">🛠</span><span class="grey-text">🛠</span><span class="brown-text">🛠</span><span class="grey-text">🛠</span><span class="brown-text">🛠</span></h5>
+	</div>
+
+	<!-- My bots section -->
+	<div class="section">
+		<div class="row container" id="botsList">
+		</div> 
+	</div>
+
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+	<script type="text/javascript" src="bower_components/showdown/dist/showdown.min.js"></script>
+	<script type="text/javascript" src="bower_components/jsrender/jsrender.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$(".materialboxed").materialbox()
+		})
+	</script>
+	<script type="text/x-jsrender" id="cardTemplate">
+		<div class="col s6">
+			<div class="card large">
+				<div class="card-image">
+					<img class="responsive-img" height="480px" src="{{:imgSrc}}">
+					<span class="card-title black-text"><b>{{:title}}</b></span>
+				</div>
+				<div class="card-content">
+					{{:content}}
+				</div>
+				<div class="card-action">
+					{{if store_link}}
+						<a href="{{:store_link}}">Bot Store Link</a>
+					{{/if}}
+					{{if github_url}}
+						<a href="{{:github_url}}">Bot's Github Repo</a>
+					{{/if}}
+					{{if bot_link}}
+						<a href="{{:bot_link}}">Bot Link</a>
+					{{/if}}
+				</div>
+			</div>
+		</div>
+	</script>
+</body>
+</html>

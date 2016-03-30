@@ -1,0 +1,8 @@
+{
+	"name": "Loklak Tweet Bot",
+	"images": ["assets/img/loklak.png"],
+	"store_link": "https://twitter.com/loklaktweetbot",
+	"bot_link": "https://telegram.me/loklaktweetbot",
+	"github_url": "https://github.com/abdulhannanali/loklak-telegram-chat-bot/",
+	"long_desc": "desc2.md"
+}

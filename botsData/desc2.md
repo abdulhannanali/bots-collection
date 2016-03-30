@@ -1,0 +1,3 @@
+[@LoklaktweetBot](https://telegram.me/loklaktweetbot) uses [Loklak.org's](http://loklak.org) (a reliable distributed tweet search server) API to search for user and tweets. This bot uses [redis](http://redis.io) for session managment which is essential for the session maintenance for the user. 
+
+In order to minimize the API calls made to [Loklak.org's](https://loklak.org) server. Once the search is made for a tweet term other tweets are stored in the database.
